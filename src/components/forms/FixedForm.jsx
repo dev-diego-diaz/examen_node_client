@@ -28,7 +28,7 @@ const FixedForm = () => {
   };
 
   const sendForm = () => {
-    let idAux = book.id ? book.id++ : 0;
+    let idAux = book && book.id ? book.id++ : 0;
 
     try {
       createFixed(
