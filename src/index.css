@@ -3,3 +3,76 @@
   height: 450px;
   object-fit: cover;
 }
+
+.rowStyle {
+  width: 190px;
+  margin-right: 10px;
+  border: solid 1px grey !important;
+  border-radius: 7px !important;
+  cursor: pointer;
+}
+
+.link {
+  color: grey;
+}
+.link:hover {
+  color: #3a97ee;
+}
+
+.inputDiego {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid !important;
+  outline: none;
+  font-size: 1rem;
+}
+
+.inputDiegoInLine {
+  margin-bottom: 10px;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid !important;
+  outline: none;
+  font-size: 1rem;
+}
+
+.mr-1 {
+  margin-right: 2px;
+}
+.mr-2 {
+  margin-right: 4px;
+}
+.mr-3 {
+  margin-right: 6px;
+}
+.mr-4 {
+  margin-right: 8px;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  border: none !important;
+}
+
+.add-form {
+  border: 1px solid grey;
+  padding: 30px 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.header-table {
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.td-table {
+  padding-left: 5px;
+  font-size: 13px;
+}

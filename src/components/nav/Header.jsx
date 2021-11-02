@@ -4,7 +4,6 @@ import {
   AppstoreOutlined,
   SettingOutlined,
   UserOutlined,
-  UserAddOutlined,
   LogoutOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
@@ -21,7 +20,6 @@ const Header = () => {
   let history = useHistory();
 
   const handleClick = (e) => {
-    // console.log(e.key);
     setCurrent(e.key);
   };
 
@@ -54,13 +52,18 @@ const Header = () => {
         >
           {user && user.role === "subscriber" && (
             <Item>
-              <Link to="/user/history">Dashboard</Link>
+              <Link to="/dashboard">Dashboard</Link>
             </Item>
           )}
 
           {user && user.role === "admin" && (
             <Item>
-              <Link to="/admin/dashboard">Dashboard</Link>
+              <Link to="/dashboard">Dashboard</Link>
+            </Item>
+          )}
+          {user && user.role === "admin" && (
+            <Item>
+              <Link to="/admin/dashboard">Dashboard Admin</Link>
             </Item>
           )}
 
