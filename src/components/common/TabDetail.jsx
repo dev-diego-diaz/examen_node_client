@@ -109,7 +109,6 @@ const TabDetail = ({ fixed, variable, saving }) => {
         <TabPane tab="Fixed Expenses" key="1">
           <FixedForm />
           <Table columns={columnsFixed} data={fixed} />
-          {/* <Table columns={columnsFixed} dataSource={fixed} /> */}
         </TabPane>
         <TabPane tab="Variable Expenses" key="2">
           <VariableForm />

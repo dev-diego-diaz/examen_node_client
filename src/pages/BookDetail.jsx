@@ -25,8 +25,6 @@ const BookDetail = ({ match }) => {
     try {
       detailBook(slug, user.token)
         .then(({ data }) => {
-          console.log(data.theBook._id);
-
           setBookData(data.theBook);
           setFixed(data.theFixed);
           setVariable(data.theVariable);
@@ -76,8 +74,6 @@ const BookDetail = ({ match }) => {
       <div>
         <b>Last change: </b> {flagData && bookData.updatedAt.split("T")[0]}
       </div>
-
-      {/* {bookData._id} */}
 
       <TabDetail fixed={fixed} variable={variable} saving={saving} />
     </div>

@@ -13,7 +13,7 @@ import { useSelector } from "react-redux";
 import { Spin } from "antd";
 
 const ForgotPassword = ({ history }) => {
-  const [email, setEmail] = useState("di.diaz.ortiz@gmail.com");
+  const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
 
   const { user } = useSelector((state) => ({ ...state }));

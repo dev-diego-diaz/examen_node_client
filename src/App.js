@@ -68,7 +68,6 @@ const App = () => {
         <UserRoute exact path="/book/:slug" component={bookDetail} />
 
         <AdminRoute exact path="/dashboard" component={Dashboard} />
-
         <AdminRoute exact path="/admin/dashboard" component={AdminDashboard} />
       </Switch>
     </>

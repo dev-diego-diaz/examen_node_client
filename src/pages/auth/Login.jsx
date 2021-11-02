@@ -10,8 +10,8 @@ import ForgotPassword from "../../components/modals/ForgotPassword";
 import Register from "../../components/modals/Register";
 
 const Login = ({ history }) => {
-  const [email, setEmail] = useState("di.diaz.ortiz@gmail.com");
-  const [password, setPassword] = useState("Diego14");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
   const [isModalVisibleForget, setIsModalVisibleForget] = useState(false);

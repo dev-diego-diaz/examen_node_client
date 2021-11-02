@@ -23,14 +23,12 @@ const FixedForm = () => {
     if (detail && cost && expiration && payment && category && observations) {
       sendForm();
     } else {
-      toast.error("Debe completar todos los campos");
+      toast.error("You must complete all the fields");
     }
   };
 
   const sendForm = () => {
     let idAux = book.id ? book.id++ : 0;
-
-    console.log("idAux: " + idAux);
 
     try {
       createFixed(
